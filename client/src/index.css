@@ -1,0 +1,409 @@
+body{
+}
+
+.login{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 14rem auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.home{
+    color: black;
+}
+
+.header{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.login form{
+    margin-top: 30px;
+    padding: 10px 10px;
+}
+
+.login input{
+    width: 100% !important;
+    height: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+hr{
+    width: auto;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 100%;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.reg{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+
+.register{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 10rem auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+}
+
+.header_register{
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 20px;
+}
+
+.register form{
+    margin-top: 30px;
+    padding: 10px 10px;
+}
+
+.register input{
+    width: 100% !important;
+    height: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.btn{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    letter-spacing: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+p{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.reg{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+
+.form{
+    width: 520px;
+    height: auto;
+    background: rgba(240, 246, 175, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(240, 246, 175, 0.3);
+    margin: 6rem auto;
+}
+
+.header_profile{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.profile{
+    padding: 20px 20px;
+    user-select: none;
+}
+
+.profile input{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.profile select{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+.profile select option{
+    background: rgba(240, 246, 175, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(240, 246, 175, 0.3);
+}
+
+.profile_btn{
+    background-color: blue;
+    border-radius: 10px;
+    border: 2px solid blue;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.line{
+    background-color: black;
+    border-radius: 100%;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+.loading{
+    width: 80px;
+    height: 80px;
+    margin: 42vh auto;
+    transform: translateY(-50%);
+    border: 3px solid black;
+    background-color: gray;
+    border-radius: 100%;
+    animation: spin 1s infinite;
+}
+
+@keyframes spin {
+    0% { width: 40px; height: 40px;}
+    100% { width: 80px; height: 80px; }
+  }
+
+.pass_error{
+    color: red;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.react_icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.user_icon{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.react_user_icon{
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.react_name_icon{
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.react_list li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    justify-content: start;
+}
+
+.user_icon a{
+    text-decoration: none;
+}
+
+
+.icon{
+    height: 25px;
+    width: 25px;
+}
+
+.form_profile{
+    padding: 20px 20px;
+    height: auto;
+    width: 520px;
+    margin: 6rem auto;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    background: rgba(240, 246, 175, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(240, 246, 175, 0.3);
+}
+
+.line_profile{
+    width: auto;
+    border: 1px solid gray;
+    background-color: gray;
+    margin-bottom: 20px;
+}
+
+.profile_line{
+    height: 3px;
+    width: auto;
+    background-color: black;
+    margin-top: 5px;
+    border-radius: 50%;
+}
+
+.form_profile label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    letter-spacing: 4px;
+}
+
+.form_profile .name{
+    margin-top: 13px !important;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: start !important;
+}
+
+.profile_heading{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.edit_icon{
+    text-align: end;
+    position: absolute;
+    right: 0;
+}
+
+.edit{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.data_noFound{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 8rem auto;
+}
+
+.link{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width : 768px) {
+
+    .form_profile{
+        padding: 20px 20px;
+        height: auto;
+        font-size: 18px;
+        width: 94%;
+        margin: 6rem auto;
+        font-family:'Times New Roman', Times, serif;
+        position: relative;
+  }
+    
+  .edit{
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+}
+  
+.form{
+    width: 100%;
+    height: auto;
+    margin: 6rem auto;
+}
+
+.icon{
+    height: 25px;
+    width: 25px;
+    right: 0;
+}
+
+.react_icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+}
