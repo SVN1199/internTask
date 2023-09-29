@@ -2,19 +2,24 @@ const asyncHandler = require('express-async-handler')
 const Profile = require('../model/profileModel')
 
 const getProfile = asyncHandler(async(req,res)=>{
-        const profile = await Profile.find({user : req.user.id})
-        const reverse = await profile.reverse()[0]
-        if(!profile){
-            res.status(400)
-            throw new Error('No Data Found')
-        }
-        res.status(200).json(reverse)
+    const profile = await Profile.find({ user: req.user.id });
+    const reversedProfile = profile.reverse()[0];
+
+    if (!reversedProfile) {
+        res.status(400).json({ error: 'No Data Found' });
+        return;
+    }
+
+    res.status(200).json(reversedProfile);
 })
 
 const postProfile = asyncHandler(async(req,res)=>{
-        if (!req.body) {
-            res.status(400).json({ error: 'Please fill the field' });
-        }
+    const { name, fname, dob, gender, mobile, address } = req.body;
+
+    if (!name || !fname || !dob || !gender || !mobile || !address) {
+        res.status(400).json({ error: 'Please fill all the fields' });
+        return;
+    }
     
         const profile = await Profile.create({
             name  : req.body.name,
