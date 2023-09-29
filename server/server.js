@@ -14,6 +14,7 @@ app.use('/api/users', userRouter)
 
 // deployment config
 const path = require("path");
+const { errorHandler } = require('./middleware/errorMiddleware');
 __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
@@ -23,6 +24,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+app.use(errorHandler)
 
 app.listen(port, ()=>{
     console.log(`Server Running on ${port}`)
