@@ -5,6 +5,8 @@ const dotenv = require('dotenv').config();
 const config = require('./config/db')
 const userRouter = require('./route/userRoutes')
 const profileRouter = require('./route/profileRoute')
+const { errorHandler } = require('./middleware/errorMiddleware');
+
 
 app.use(express.json())
 app.use(express.urlencoded({extended : false}))
@@ -14,7 +16,6 @@ app.use('/api/users', userRouter)
 
 // deployment config
 const path = require("path");
-const { errorHandler } = require('./middleware/errorMiddleware');
 __dirname = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
