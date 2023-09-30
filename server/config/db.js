@@ -1,12 +1,21 @@
 const mongoose = require('mongoose')
-mongoose.connect(process.env.MONGO_URL)
+mongoose.Promise = global.Promise
 
-const connection = mongoose.connection
+async function myDbConnection() {
 
-connection.on('connected', ()=>{
-    console.log('MongoDB Connected Successfully')
-})
+    const url = process.env.MONGO_URL
 
-connection.on('Error', (err)=>{
-    console.log('MongoDB Connection Error ' + err)
-})
+    try {
+        let connectionPromise = await mongoose.connect(url, { useNewUrlParser: true });
+        if (mongoose.connection) {
+            console.log('Connected Successfully')
+            global.connectionPromise = connectionPromise;
+        } else { global.connectionPromise = null; 
+                 console.log('not connected to DB') }
+        return connectionPromise;
+    } catch (error) {
+        console.log('Error connecting to DB ::', error);
+    }
+}
+
+module.exports = myDbConnection();
