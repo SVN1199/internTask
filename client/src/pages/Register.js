@@ -23,7 +23,7 @@ function Register() {
 
   useEffect(()=>{
       if(isError){
-        toast.error('User Already Exists' || message)
+        toast.error(message)
       }
 
       if(isSuccess && user){
